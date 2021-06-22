@@ -1,5 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const path = require('path');
+
 
 const PORT = process.env.PORT || 3000
 
@@ -15,8 +17,18 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutdb", {
   useFindAndModify: false
 });
 
-// routes
-// app.use(require("./routes/api.js"));
+// Workouts.create({ name: "Bicep Curls" })
+//   .then(fitnestrackerdb => {
+//     console.log(fitnestrackerdb);
+//   })
+//   .catch(({message}) => {
+//     console.log(message);
+//   });
+
+ app.use(require("./routes/api.js"));
+ app.use(require("./routes/view.js"));
+
+
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
