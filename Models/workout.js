@@ -1,7 +1,9 @@
+//requires mongoos
 const mongoose = require("mongoose");
-
+//creates the schema 
 const Schema = mongoose.Schema;
 
+//creates the workout schema 
 const workoutSchema = new Schema({
   
 

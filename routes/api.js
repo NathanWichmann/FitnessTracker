@@ -1,7 +1,9 @@
+//creates the connection to all the files 
 const router = require('express').Router();
+//brings in the Workout model
 const Workout = require('../Models/workout.js')
 
-
+// tis shows the last workout info
 router.get("/api/workouts", (req, res) => {
     // console.log('MADE IT HERE');
     Workout.aggregate([
@@ -24,6 +26,7 @@ router.get("/api/workouts", (req, res) => {
 
 });
 
+// this finds by id and updates the exercises 
 router.put("/api/workouts/:id", (req, res) =>{
     // console.log(req.params.id);
     // console.log(req.body);
@@ -44,6 +47,7 @@ router.put("/api/workouts/:id", (req, res) =>{
 
 });
 
+//this creates and posts the workout 
 router.post("/api/workouts", (req, res) => {
     Workout.create ({})
     .then((Workoutdb) => {
@@ -55,7 +59,7 @@ router.post("/api/workouts", (req, res) => {
 }
 )
 
-
+// this renders the workout stats and adds all the feilds to the chart.js and gives the totols over 9 days 
 router.get("/api/workouts/range", (req, res) => {
     // console.log('MADE IT HERE');
     Workout.aggregate([
