@@ -18,6 +18,7 @@ This repository (FitnessTracker) is an educational homework assignment from the 
 ![fitness-tracker2](https://user-images.githubusercontent.com/77902368/123527878-2c8e2280-d6b1-11eb-872f-70e43daa9cef.png)
 ![fitness-tracker3](https://user-images.githubusercontent.com/77902368/123527880-2e57e600-d6b1-11eb-8420-9560d671857b.png)
 ![fitness-tracker4](https://user-images.githubusercontent.com/77902368/123527881-3021a980-d6b1-11eb-843f-977ffa3fdd97.png)
+![image](https://user-images.githubusercontent.com/77902368/124299069-004c2900-db2b-11eb-87cb-bcf75a0e1a03.png)
 
 # Description
 This application allows a single user to track their own physical activity to monitor their progress. It is a simple application that uses many different connected languages. Monngo is connected to mongoose, which is connected to node.js where JavaScript can be used. This all comes together in a format that is like model, view, controller. There is a model file, there is a public file that’s similar to the view and a routes file that is close to the controller. 
